@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Rubik:wght@300;400&display=swap");
+
+:root {
+  --background: #c7f459;
+  --primary: #7335d4;
+  --secondary: #232a27;
+  --text: #dcd8df;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--secondary);
+  user-select: none;
+}
+
+h1 {
+  margin-top: 50px;
+  font-family: "Archivo", sans-serif;
+  color: var(--primary);
+  font-size: 40px;
+}
+
+.input-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+  width: 318px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.input {
+  border: none;
+  background-color: rgba(35, 42, 39, 0.75);
+  color: var(--text);
+  font-size: 16px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#message-input {
+  width: 318px;
+  height: 118px;
+  grid-row: 1;
+  grid-column: span 2;
+  resize: none;
+  text-align: center;
+}
+
+#sender-input,
+#receiver-input {
+  width: 100%;
+  height: 40px;
+  grid-row: 2;
+}
+
+#send-button {
+  border: none;
+  width: 318px;
+  height: 60px;
+  grid-row: 3;
+  grid-column: span 2;
+  background: var(--primary);
+  color: var(--text);
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "Archivo", sans-serif;
+}
+
+#send-button:hover {
+  cursor: pointer;
+  background-color: #8149d8;
+}
+
+h2 {
+  margin-top: 40px;
+  font-family: "Archivo", sans-serif;
+  font-size: 26px;
+  color: var(--secondary);
+}
+
+#message-board {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 12px;
+  margin-bottom: 50px;
+  list-style: none;
+  padding: 0;
+}
+
+#message-board li {
+  width: 318px;
+  margin: 0 auto;
+  background-color: var(--secondary);
+  color: #c7aeee;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  text-align: left;
+  font-weight: bold;
+}
+
+#message-board li:hover {
+  background-color: #2e3231;
+}
+
+#message-board li p:first-child,
+#message-board li p:last-child {
+  font-weight: 300;
+  color: #ddf89b;
+}
+
+footer {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+footer a:hover {
+  color: #8149d8;
+}
+
+@media only screen and (min-width: 600px) {
+  .input-container,
+  #message-input,
+  #send-button,
+  #message-board li {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .input-container,
+  #message-input,
+  #send-button,
+  #message-board li {
+    width: 700px;
+  }
+}

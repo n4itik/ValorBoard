@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Primary Meta Tags -->
+    <title>ValorBoard</title>
+    <meta name="title" content="ValorBoard" />
+    <meta name="description" content="Leave your message here.." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://valorboard.netlify.app" />
+    <meta property="og:title" content="ValorBoard" />
+    <meta property="og:description" content="Leave your message here.." />
+    <meta
+      property="og:image"
+      content="https://valorboard.netlify.app/assets/preview.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://valorboard.netlify.app" />
+    <meta property="twitter:title" content="ValorBoard" />
+    <meta property="twitter:description" content="Leave your message here.." />
+    <meta
+      property="twitter:image"
+      content="https://valorboard.netlify.app/assets/preview.png"
+    />
+  </head>
+  <body>
+    <h1>ValorBoard</h1>
+
+    <div class="input-container">
+      <textarea
+        class="input"
+        id="message-input"
+        type="text"
+        placeholder="Leave your message here.."
+      ></textarea>
+      <input class="input" id="sender-input" type="text" placeholder="From" />
+      <input class="input" id="receiver-input" type="text" placeholder="To" />
+
+      <button id="send-button">Send</button>
+    </div>
+
+    <h2>— Messages —</h2>
+
+    <ul id="message-board"></ul>
+
+    <footer>
+      <a href="https://bento.me/naitik" target="_blank">© Naitik Yadav</a>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
