@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Rubik:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Rubik:wght@300;400&display=swap");
 
 :root {
   --background: #c7f459;
@@ -20,7 +20,7 @@ body {
 
 h1 {
   margin-top: 50px;
-  font-family: "Archivo", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   color: var(--primary);
   font-size: 40px;
 }
@@ -70,7 +70,7 @@ h1 {
   color: var(--text);
   font-size: 22px;
   font-weight: bold;
-  font-family: "Archivo", sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 
 #send-button:hover {
@@ -80,7 +80,7 @@ h1 {
 
 h2 {
   margin-top: 40px;
-  font-family: "Archivo", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-size: 26px;
   color: var(--secondary);
 }
@@ -103,7 +103,7 @@ h2 {
   box-sizing: border-box;
   overflow-wrap: break-word;
   text-align: left;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 #message-board li:hover {
@@ -117,7 +117,7 @@ h2 {
 }
 
 footer {
-  font-family: "Archivo", sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-size: 16px;
   margin-bottom: 20px;
 }
