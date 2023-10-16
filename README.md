@@ -16,8 +16,3 @@ ValorBoard is a message board application inspired by the color theme of Gekko f
 - CSS
 - JavaScript
 - Firebase
-
-### Continued development
-
-- A like button can be added to the messages, restricted to one like per user.
-- The desktop version can be improved to utilise the extra space.
